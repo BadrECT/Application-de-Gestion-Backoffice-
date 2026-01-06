@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - BiblioTech</title>
+    <link rel="stylesheet" href="css/login.css">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+
+    <div class="login-container">
+        <div class="login-header">
+            <div style="font-size: 3rem; color: var(--primary-color); margin-bottom: 10px;">
+                <ion-icon name="book"></ion-icon>
+            </div>
+            <h2>Bienvenue</h2>
+            <p>Connectez-vous à votre espace</p>
+        </div>
+
+        <form id="loginForm">
+            <div id="error-msg">Identifiants incorrects</div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="votre@email.com" required autocomplete="email">
+                <ion-icon name="mail-outline" class="input-icon"></ion-icon>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" placeholder="Votre mot de passe" required
+                    autocomplete="current-password">
+                <ion-icon name="lock-closed-outline" class="input-icon"></ion-icon>
+            </div>
+
+            <button type="submit" class="btn-login">
+                Se connecter
+            </button>
+
+            <div class="forgot-password">
+                <a href="#">Mot de passe oublié ?</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>
